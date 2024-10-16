@@ -1,0 +1,80 @@
+/*Header.js*/
+.Title{
+    
+    /* width: 50vh; 
+    height: 6vw; */
+    color: #74A35B;
+    margin: 51vmin;
+    font-size: 11vmin;
+    background-color: #504837;
+    background-size: cover;
+    text-align: center;
+    padding-bottom: 1vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    border-radius: 25px;
+    font-family: Itim
+}
+.site-header{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 44vh; /* adjust this value as needed */
+    width: 100%;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+.container{
+    height: 44vh;
+    margin-top: -70px;
+    font-size: 50px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    justify-content: center;
+    align-items: center;
+    display:flex
+}
+.title_container{
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5vmax;
+    flex: 1
+}
+
+
+/*Nav.js*/
+.nav{
+    position: absolute;
+    top: 44vh;
+    width: 100%; 
+    background-color: #50483790;
+    padding: 0;
+    display: inline-block;
+}
+.nav-container{
+    justify-content: space-between;
+    text-decoration: none;
+}
+.nav-text{
+    color: Black;
+    font-size: 2.5vmax;
+    padding: 1vw;
+    font-family: Itim;
+    right: 0;
+    text-decoration: none;
+}
+
+
+@font-face {
+    font-family: Itim;
+    src: url(./fonts/Itim-Regular.ttf);
+}
