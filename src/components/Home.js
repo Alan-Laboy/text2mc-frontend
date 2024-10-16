@@ -1,12 +1,14 @@
 
 import Header from './Header';
+import Introduction from './Introduction';
 import NavigationBar from './Nav';
 
 function Home() {
   return (
-    <div>
+    <div className='containter'>
         <Header />
         <NavigationBar />
+        <Introduction />
     </div>
   );
 }

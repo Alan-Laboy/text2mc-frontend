@@ -1,3 +1,10 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    width: 100vw;
+    justify-content: center;
+  }
+
 /*Header.js*/
 .Title{
     
@@ -42,17 +49,16 @@
 
 
 /*Nav.js*/
-.nav{
-    position: absolute;
-    top: 44vh;
+
+.nav-container{
+    justify-content: space-between;
+    text-decoration: none;
+    position: relative;
     height: fit-content;
     width: 100%; 
     background-color: #50483790;
     display: inline-block;
-}
-.nav-container{
-    justify-content: space-between;
-    text-decoration: none;
+    z-index: 1;
 }
 .nav-text{
     color: Black;
@@ -63,6 +69,27 @@
     text-decoration: none;
 }
 
+/* Introduction.js */
+.intro-container{
+    position: relative;
+    background-color: #504837;
+    display: grid;
+    grid-template-columns: 30% 70%;
+    padding: 2vmin;
+    margin: 5vmin;
+    width: 80vw;
+}
+.header-container{
+    background-color: #74A35B;
+    grid-column: 1;
+    margin-right: 2vmin;
+    padding: 10px;
+}
+.para-container{
+    background-color: #74A35B;
+    grid-column: 2;
+    padding: 10px;
+}
 
 @font-face {
     font-family: Itim;
