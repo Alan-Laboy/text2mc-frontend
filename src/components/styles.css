@@ -26,17 +26,7 @@
     background-position: center;
     background-repeat: no-repeat;
 }
-.container{
-    height: 44vh;
-    margin-top: -70px;
-    font-size: 50px;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    justify-content: center;
-    align-items: center;
-    display:flex
-}
+
 .title_container{
     margin: 0;
     position: absolute;
@@ -55,9 +45,9 @@
 .nav{
     position: absolute;
     top: 44vh;
+    height: fit-content;
     width: 100%; 
     background-color: #50483790;
-    padding: 0;
     display: inline-block;
 }
 .nav-container{
