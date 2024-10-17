@@ -9,7 +9,7 @@ export default function Introduction(){
                 <h1>Introduction</h1>
             </div>
             <div className="para-container">
-                <p>This is a placeholder text2MC.</p>
+                <p>This is a placeholder text2mc.</p>
             </div>
         </div>
 
