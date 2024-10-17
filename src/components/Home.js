@@ -1,6 +1,7 @@
 
 import AIModel from './AIModel';
 import Block2Vec from './Block2Vec';
+import FAQ from './FAQ';
 import Header from './Header';
 import Introduction from './Introduction';
 import NavigationBar from './Nav';
@@ -13,6 +14,7 @@ function Home() {
         <Introduction />
         <Block2Vec />
         <AIModel />
+        <FAQ />
     </div>
   );
 }
