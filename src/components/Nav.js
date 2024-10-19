@@ -1,10 +1,7 @@
 import Navbar from "react-bootstrap/Navbar"
 import Nav from "react-bootstrap/Nav"
-// import { Container } from "react-bootstrap"
-// import Button from "react-bootstrap/Button"
 
 export default function NavigationBar(){
-
     return(
         <div className="nav-container">
             <Navbar>
@@ -21,5 +18,4 @@ export default function NavigationBar(){
             </Navbar>
         </div>
     )
-
 }
