@@ -11,25 +11,23 @@ import Col from "react-bootstrap/Col";
 
 function Home() {
   return (
-    <div className="containter">
-      <Container fluid>
-        <Row>
-          <Header />
-          <NavigationBar />          
-        </Row>
-        <Row>
-          <Col />
-          <Col>
-            <Introduction />
-            <Block2Vec />
-            <AIModel />
-            <FAQ />
-            <Links />
-          </Col>
-          <Col />
-        </Row>
-      </Container>
-    </div>
+    <Container fluid>
+      <Row>
+        <Header />
+        <NavigationBar />          
+      </Row>
+      <Row>
+        <Col sm={2} />
+        <Col sm={8} >
+          <Introduction />
+          <Block2Vec />
+          <AIModel />
+          <FAQ />
+          <Links />
+        </Col>
+        <Col sm={2} />
+      </Row>
+    </Container>
   );
 }
 
