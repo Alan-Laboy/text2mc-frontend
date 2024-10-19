@@ -1,9 +1,23 @@
+import Accordion from "react-bootstrap/Accordion";
+
 export default function FAQ() {
     return (
         <div id="faq">
             <h1>Frequently Asked Questions</h1>
-            <p>Ad ex pariatur duis sint duis mollit dolor eiusmod adipisicing ex. Mollit adipisicing fugiat sit labore Lorem. Laboris aliqua qui incididunt duis aliqua nulla aute.</p>
-            <p>Id sit mollit eiusmod ea occaecat nulla fugiat quis consectetur reprehenderit ipsum aute sunt officia. Eu voluptate id occaecat sunt id reprehenderit velit est do. Nisi ad culpa voluptate mollit amet esse elit labore. Consectetur non exercitation veniam anim pariatur amet aliquip mollit minim ex veniam pariatur. Quis aute consequat exercitation qui consectetur eu nostrud amet in ullamco id. Non officia dolor ipsum aliqua proident veniam exercitation dolore. Veniam magna enim ullamco officia excepteur. Duis cillum veniam adipisicing aliquip minim cupidatat ut velit. Adipisicing ad Lorem aliquip et reprehenderit ex duis nostrud nostrud nulla. Irure enim officia tempor incididunt aliqua. Et ex do sint qui in est.</p>
+            <Accordion>
+              <Accordion.Item eventKey="0">
+                <Accordion.Header>Question 1</Accordion.Header>
+                <Accordion.Body>Duis deserunt ex esse amet nulla voluptate est et.</Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="1">
+                <Accordion.Header>Question 2</Accordion.Header>
+                <Accordion.Body>Duis deserunt ex esse amet nulla voluptate est et.</Accordion.Body>
+              </Accordion.Item>
+              <Accordion.Item eventKey="2">
+                <Accordion.Header>Question 3</Accordion.Header>
+                <Accordion.Body>Duis deserunt ex esse amet nulla voluptate est et.</Accordion.Body>
+              </Accordion.Item>
+            </Accordion>
         </div>
     );
 }
