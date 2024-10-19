@@ -96,3 +96,8 @@
     font-family: Itim;
     src: url(./fonts/Itim-Regular.ttf);
 }
+
+.epoch-image {
+    width: 50%;
+    height: auto;
+}
