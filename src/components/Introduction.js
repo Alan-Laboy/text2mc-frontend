@@ -5,7 +5,7 @@ import Epoch83 from "./images/epoch_83.gif";
 
 export default function Introduction() {
   return (
-    <div id="intro">
+    <div className="mb-5" id="intro">
       <div className="">
         <h1>Introduction</h1>
       </div>

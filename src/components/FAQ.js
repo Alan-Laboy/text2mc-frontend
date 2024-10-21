@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 export default function FAQ() {
     return (
-        <div id="faq">
+        <div className="mb-5" id="faq">
             <h1>Frequently Asked Questions</h1>
             <Accordion>
               <Accordion.Item eventKey="0">
