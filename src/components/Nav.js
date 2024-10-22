@@ -5,7 +5,7 @@ import Nav from "react-bootstrap/Nav";
 export default function NavigationBar() {
   return (
     <>
-      <Navbar className="nav-container mb-3" data-bs-theme="dark" sticky="top">
+      <Navbar className="nav-container mb-3" data-bs-theme="dark">
         <Container>
           <Navbar.Brand href="/#">text2mc</Navbar.Brand>
           <Nav classname="me-auto">
