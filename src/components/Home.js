@@ -14,11 +14,9 @@ function Home() {
     <Container fluid>
       <Row>
         <Header />
-        <NavigationBar />          
-      </Row>
-      <Row>
+        <NavigationBar />
         <Col sm={2} />
-        <Col sm={8} >
+        <Col sm={8}>
           <Introduction />
           <Block2Vec />
           <AIModel />
