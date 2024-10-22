@@ -3,7 +3,7 @@ import Nav from "react-bootstrap/Nav"
 
 export default function NavigationBar(){
     return(
-        <div className="nav-container d-flex justify-content-center mb-3">
+        <div className="nav-container mb-3">
             <Navbar data-bs-theme="dark">
                 <Navbar.Collapse id="basic-navbar-nav">
                   <Nav className="nav">
