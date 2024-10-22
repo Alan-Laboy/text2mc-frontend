@@ -8,7 +8,7 @@
 .Title{
     /* width: 50vh; 
     height: 6vw; */
-    color: #74A35B;
+    color: #FFFFFF;
     margin: 51vmin;
     font-size: 11vmin;
     background-color: #504837;
@@ -49,12 +49,9 @@
 
 /*Nav.js*/
 .nav-container{
-    background-color: #50483790;
-}
-
-.nav-text{
+    background-color: #504837;
+    font-size: x-large;
     font-family: Itim;
-    font-size: x-large !important;
 }
 
 @font-face {
