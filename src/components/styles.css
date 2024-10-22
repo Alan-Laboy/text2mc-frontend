@@ -6,7 +6,6 @@
 
 /*Header.js*/
 .Title{
-    
     /* width: 50vh; 
     height: 6vw; */
     color: #74A35B;
@@ -21,6 +20,7 @@
     border-radius: 25px;
     font-family: Itim
 }
+
 .site-header{
     position: relative;
     display: flex;
@@ -54,6 +54,7 @@
 
 .nav-text{
     font-family: Itim;
+    font-size: x-large !important;
 }
 
 @font-face {
