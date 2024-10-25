@@ -6,47 +6,21 @@ import Epoch83 from "./images/epoch_83.gif";
 export default function Introduction() {
   return (
     <div className="mb-5" id="intro">
-      <div className="">
-        <h1>Introduction</h1>
+      <h1>Introduction</h1>
+      <p>text2mc is the first tool to generate buildings in Minecraft with Generative AI.</p>
+      <p>It is built upon multiple components that rely on each other:</p>
+      <ul>
+        <li>Web Scraper which downloads builds from PlanetMinecraft to have training data for the model.</li>
+        <li>Data Processor which converts Minecraft buildings into a file that an AI model can read.</li>
+        <li>AI Model which learns from our training data to output new builds.</li>
+        <li>Web Application for users to be able to generate and interact with buildings at the click of a button.</li>
+      </ul>
+      <div className="d-flex justify-content-evenly">
+        <Image src={Epoch15} alt="Epoch 15" className="epoch-image" />
+        <Image src={Epoch83} alt="Epoch 83" className="epoch-image" />
       </div>
-      <div className="">
-        <p>This is a placeholder text2mc.</p>
-        <p>
-          Velit magna enim ipsum pariatur. Id eu dolor incididunt laborum enim
-          occaecat magna laborum commodo laboris nulla. Et quis ad ullamco nulla
-          adipisicing incididunt eiusmod elit.
-        </p>
-        <p>
-          Ea ipsum ipsum reprehenderit dolore ex ut officia tempor esse enim do
-          ut id. Culpa voluptate est non Lorem. Esse deserunt anim ullamco velit
-          adipisicing. Officia nisi cupidatat nulla fugiat irure cillum
-          consectetur Lorem velit laborum ut irure.
-        </p>
-        <div className="d-flex justify-content-evenly">
-          <Image src={Epoch15} alt="Epoch 15" className="epoch-image" />
-          <Image src={Epoch83} alt="Epoch 83" className="epoch-image" />
-        </div>
-        <p>
-          Velit magna enim ipsum pariatur. Id eu dolor incididunt laborum enim
-          occaecat magna laborum commodo laboris nulla. Et quis ad ullamco nulla
-          adipisicing incididunt eiusmod elit.
-        </p>
-        <p>
-          Ea ipsum ipsum reprehenderit dolore ex ut officia tempor esse enim do
-          ut id. Culpa voluptate est non Lorem. Esse deserunt anim ullamco velit
-          adipisicing. Officia nisi cupidatat nulla fugiat irure cillum
-          consectetur Lorem velit laborum ut irure.
-        </p>
-        <p>
-          Et laborum reprehenderit pariatur cupidatat eu aliqua mollit et in.
-          Reprehenderit eu incididunt est minim adipisicing laboris consequat
-          fugiat elit eiusmod proident et voluptate aliqua. Quis id duis
-          excepteur ex deserunt sint aute adipisicing in commodo consectetur qui
-          amet aliqua. Sint adipisicing est et occaecat eiusmod officia enim
-          magna. Magna excepteur irure et ipsum duis consectetur commodo laborum
-          est esse proident Lorem sunt. Magna quis exercitation exercitation
-          culpa nulla fugiat dolor quis sit aliqua ea voluptate sunt culpa.
-        </p>
+      <div className="d-flex justify-content-center">
+        <p>Two sample runs of text2mc.</p>
       </div>
     </div>
   );
