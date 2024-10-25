@@ -31,7 +31,7 @@
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url("./images/title-bg.png");
+    background-image: url("/src/images/title-bg.png");
 }
 
 .title_container{
