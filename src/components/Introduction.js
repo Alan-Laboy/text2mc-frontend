@@ -1,7 +1,4 @@
 import "./styles.css";
-import Image from "react-bootstrap/Image";
-import Epoch15 from "./images/epoch_15.gif";
-import Epoch83 from "./images/epoch_83.gif";
 
 export default function Introduction() {
   return (
@@ -15,13 +12,6 @@ export default function Introduction() {
         <li>AI Model which learns from our training data to output new builds.</li>
         <li>Web Application for users to be able to generate and interact with buildings at the click of a button.</li>
       </ul>
-      <div className="d-flex justify-content-evenly">
-        <Image src={Epoch15} alt="Epoch 15" className="epoch-image" />
-        <Image src={Epoch83} alt="Epoch 83" className="epoch-image" />
-      </div>
-      <div className="d-flex justify-content-center">
-        <p>Two sample runs of text2mc.</p>
-      </div>
     </div>
   );
 }
