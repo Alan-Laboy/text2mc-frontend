@@ -1,6 +1,6 @@
 import Image from "react-bootstrap/Image";
-import Epoch15 from "./images/epoch-15-cropped.gif";
-import Epoch83 from "./images/epoch-83-cropped.gif";
+import Epoch15 from "./images/epochs/epoch-15-cropped.gif";
+import Epoch83 from "./images/epochs/epoch-83-cropped.gif";
 
 export default function AIModel() {
     return (
