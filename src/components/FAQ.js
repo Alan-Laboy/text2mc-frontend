@@ -1,4 +1,5 @@
 import Accordion from "react-bootstrap/Accordion";
+import { Link } from "react-router-dom";
 
 export default function FAQ() {
     return (
@@ -6,8 +7,8 @@ export default function FAQ() {
             <h1>Frequently Asked Questions</h1>
             <Accordion>
               <Accordion.Item eventKey="0">
-                <Accordion.Header>How did you retrieve the data for the AI Model?</Accordion.Header>
-                <Accordion.Body>We got maps from PlanetMinecraft and did computer magic.</Accordion.Body>
+                <Accordion.Header>What was the inspiration for text2mc?</Accordion.Header>
+                <Accordion.Body>The inspiration for text2mc came from a research paper called <Link to="https://arxiv.org/abs/2106.10155">World-GAN</Link> which has an image of a village being generated with Generative AI, thus inspiring the creation of Minecraft builds with Generative AI.</Accordion.Body>
               </Accordion.Item>
               <Accordion.Item eventKey="1">
                 <Accordion.Header>What was the inspiration for text2mc?</Accordion.Header>
