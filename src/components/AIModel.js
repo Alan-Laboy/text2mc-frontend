@@ -16,10 +16,10 @@ export default function AIModel() {
       <Container>
         <Row>
           <Col className="text-center d-flex align-items-center" xs={12} lg={6}>
-            <Image src={Epoch15} alt="Epoch 15" className="epoch-image" />
+            <Image src={Epoch15} alt="Epoch 15" fluid />
           </Col>
           <Col className="text-center d-flex align-items-center" xs={12} lg={6}>
-            <Image src={Epoch83} alt="Epoch 83" className="epoch-image" />
+            <Image src={Epoch83} alt="Epoch 83" fluid />
           </Col>
         </Row>
       </Container>

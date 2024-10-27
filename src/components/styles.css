@@ -8,7 +8,6 @@
     --dark-brown: #382D0A;
 }
 
-/*Header.js*/
 .header{
     height: 25vh;
     background-size: cover;
@@ -22,15 +21,9 @@
     background-color: var(--dark-brown);
 }
 
-/*Nav.js*/
 .nav-container{
     background-color: var(--dark-brown);
     font-size: x-large;
-}
-
-.epoch-image {
-    width: 100%;
-    height: auto;
 }
 
 .embeddings-image {    
