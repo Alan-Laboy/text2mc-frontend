@@ -18,7 +18,6 @@
     padding-left: 1vw;
     padding-right: 1vw;
     border-radius: 25px;
-    font-family: Itim
 }
 
 .site-header{
@@ -51,12 +50,6 @@
 .nav-container{
     background-color: #504837;
     font-size: x-large;
-    font-family: Itim;
-}
-
-@font-face {
-    font-family: Itim;
-    src: url(../fonts/Itim-Regular.ttf);
 }
 
 .epoch-image {
