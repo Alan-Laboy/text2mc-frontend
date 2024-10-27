@@ -4,8 +4,12 @@
     box-sizing: border-box;
 }
 
+:root {
+    --dark-brown: #382D0A;
+}
+
 /*Header.js*/
-.site-header{
+.header{
     height: 25vh;
     background-size: cover;
     background-position: center;
@@ -13,14 +17,14 @@
     background-image: url("/src/images/title-bg.png");
 }
 
-.title{
-    color: #FFFFFF;
-    background-color: #504837;
+.header-title{
+    color: white;
+    background-color: var(--dark-brown);
 }
 
 /*Nav.js*/
 .nav-container{
-    background-color: #504837;
+    background-color: var(--dark-brown);
     font-size: x-large;
 }
 
