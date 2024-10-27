@@ -11,7 +11,7 @@ export default function AIModel() {
                 <Image src={Epoch15} alt="Epoch 15" className="epoch-image" />
                 <Image src={Epoch83} alt="Epoch 83" className="epoch-image" />
             </div>
-            <p className="text-center">Two sample runs of text2mc.</p>
+            <p className="text-center">Two runs of text2mc</p>
         </div>
     );
 }
