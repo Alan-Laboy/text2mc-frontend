@@ -8,6 +8,7 @@ import NavigationBar from "./Nav";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import PickABuild from "./PickABuild";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
           <Introduction />
           <Block2Vec />
           <AIModel />
+          <PickABuild />
           <FAQ />
           <Links />
         </Col>
