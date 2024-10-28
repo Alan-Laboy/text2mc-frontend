@@ -41,3 +41,8 @@
 
     height: auto;
 }
+
+.build-image{
+    width: 100%;
+    height: fit-content;
+}
