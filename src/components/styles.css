@@ -46,3 +46,10 @@
     width: 100%;
     height: fit-content;
 }
+
+.ToggleButton {
+    width: 10%; /* adjust this value to make the buttons wider or narrower */
+    margin-bottom: 1%;
+  }
+  
+ 
