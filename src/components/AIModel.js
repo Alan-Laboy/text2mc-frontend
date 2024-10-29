@@ -10,8 +10,12 @@ export default function AIModel() {
     <div className="mb-5" id="ai-model">
       <h1>AI Model</h1>
       <p>
-        Sunt occaecat eiusmod do officia tempor deserunt. Do laborum magna elit
-        quis magna aute. Irure duis sunt elit ex ex cupidatat laboris.
+        For our AI model, we used a Variational Auto Encoder (VAE) to generate
+        new Minecraft builds from our training data. Using a VAE helps generate
+        builds that are similar to each other in meaning, like how blocks in
+        Block2Vec can be related to each other semantically. An example would be
+        houses in our dataset being related to each other to help generate a new
+        house or castles being related to each other to generate a new casle.
       </p>
       <Container>
         <Row>
