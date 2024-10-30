@@ -9,6 +9,7 @@ import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import PickABuild from "./PickABuild";
+import LatentSpace from "./LatentSpace";
 
 function Home() {
   return (
@@ -20,6 +21,7 @@ function Home() {
         <Col sm={8}>
           <Introduction />
           <Block2Vec />
+          <LatentSpace />
           <AIModel />
           <PickABuild />
           <FAQ />
