@@ -74,7 +74,7 @@ export default function PickABuild() {
   
 
   return (
-    <div>
+    <div id="pick-a-build">
       <h1>Pick A Build</h1>
       <ToggleButtonGroup type="checkbox" onChange={(event) => handleButtonClick(event, 1)} className="mb-5 text-center d-flex flex-wrap justify-content-center">
         {buttons.map((button, index) => (
