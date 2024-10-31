@@ -42,6 +42,22 @@
     height: auto;
 }
 
+.gifs-image {    
+    @media (max-width: 991.98px) {
+        width: 70%;
+    }
+
+    @media (min-width: 992px) {
+        width: 50%;
+    }
+
+    @media (min-width: 1200px) {
+        width: 40%;
+    }
+
+    height: auto;
+}
+
 .build-image{
     width: 100%;
     height: fit-content;

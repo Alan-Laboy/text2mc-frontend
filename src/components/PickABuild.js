@@ -1,19 +1,27 @@
 import { ToggleButton, ToggleButtonGroup } from "react-bootstrap"
 import Image from "react-bootstrap/Image"
-import PlaceholderImage from "../images/temporary_image.png"
 import { useState } from "react";
 
 const buildingImages = [
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage,
-  PlaceholderImage
+  require("../images/pick_a_build_images/batch_25_641.png"),
+  require("../images/pick_a_build_images/batch_234_6072.png"),
+  require("../images/pick_a_build_images/batch_397_10302.png"),
+  require("../images/pick_a_build_images/batch_404_10483.png"),
+  require("../images/pick_a_build_images/batch_583_15145.png"),
+
+  require("../images/pick_a_build_images/batch_31_801.png"),
+  require("../images/pick_a_build_images/batch_217_5637.png"),
+  require("../images/pick_a_build_images/batch_225_5840.png"),
+  require("../images/pick_a_build_images/batch_319_8281.png"),
+  require("../images/pick_a_build_images/batch_659_17131.png"),
+]
+
+const gifImages = [
+  [require("../images/pick_a_build_images/gifs/batch_31_801_batch_25_641.gif"), require("../images/pick_a_build_images/gifs/batch_217_5637_batch_25_641.gif"), require("../images/pick_a_build_images/gifs/batch_225_5840_batch_25_641.gif"), require("../images/pick_a_build_images/gifs/batch_319_8281_batch_25_641.gif"), require("../images/pick_a_build_images/gifs/batch_659_17131_batch_25_641.gif")],
+  [require("../images/pick_a_build_images/gifs/batch_31_801_batch_234_6072.gif"), require("../images/pick_a_build_images/gifs/batch_217_5637_batch_234_6072.gif"), require("../images/pick_a_build_images/gifs/batch_225_5840_batch_234_6072.gif"), require("../images/pick_a_build_images/gifs/batch_319_8281_batch_234_6072.gif"), require("../images/pick_a_build_images/gifs/batch_659_17131_batch_234_6072.gif")],
+  [require("../images/pick_a_build_images/gifs/batch_31_801_batch_397_10302.gif"), require("../images/pick_a_build_images/gifs/batch_217_5637_batch_397_10302.gif"), require("../images/pick_a_build_images/gifs/batch_225_5840_batch_397_10302.gif"), require("../images/pick_a_build_images/gifs/batch_319_8281_batch_397_10302.gif"), require("../images/pick_a_build_images/gifs/batch_659_17131_batch_397_10302.gif")],
+  [require("../images/pick_a_build_images/gifs/batch_31_801_batch_404_10483.gif"), require("../images/pick_a_build_images/gifs/batch_217_5637_batch_404_10483.gif"), require("../images/pick_a_build_images/gifs/batch_225_5840_batch_404_10483.gif"), require("../images/pick_a_build_images/gifs/batch_319_8281_batch_404_10483.gif"), require("../images/pick_a_build_images/gifs/batch_659_17131_batch_404_10483.gif")],
+  [require("../images/pick_a_build_images/gifs/batch_31_801_batch_583_15145.gif"), require("../images/pick_a_build_images/gifs/batch_217_5637_batch_583_15145.gif"), require("../images/pick_a_build_images/gifs/batch_225_5840_batch_583_15145.gif"), require("../images/pick_a_build_images/gifs/batch_319_8281_batch_583_15145.gif"), require("../images/pick_a_build_images/gifs/batch_659_17131_batch_583_15145.gif")],
 ]
 
 const totalButtons = 5
@@ -63,8 +71,9 @@ export default function PickABuild() {
       }
 
       if (selectedButtons[0] !== undefined && selectedButtons[1] !== undefined) {
+        
+        setImage(gifImages[selectedButtons[0] - 1][(selectedButtons[1] - 1) % 5]);
         setVisible(true);
-        setImage(buildingImages[selectedButtons[0] - 1]);
       }
       else {
         setVisible(false);
@@ -107,7 +116,7 @@ export default function PickABuild() {
     {
         visible && (
           <div className="d-flex justify-content-center"> 
-            <Image src={image} alt="Placeholder Image" className="placeholder-image" />
+            <Image src={image} alt="Gif with interpolations between two builds" className="gifs-image" />
           </div>
         )
     }
