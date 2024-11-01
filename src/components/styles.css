@@ -44,12 +44,12 @@
 
 .model-diagram-image {    
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 
 .model-diagram-key {    
     width: 50%;
-    height: fit-content;
+    height: auto;
 }
 
 .gifs-image {    
