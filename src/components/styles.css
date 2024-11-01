@@ -18,7 +18,7 @@
 
 .header-title{
     color: white;
-    background-color: var(--dark-brown);
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 1);
 }
 
 .nav-container{
@@ -70,7 +70,7 @@
 
 .build-image{
     width: 100%;
-    height: fit-content;
+    height: auto;
 }
 
 .ToggleButton {
