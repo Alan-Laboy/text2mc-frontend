@@ -4,6 +4,8 @@ import Epoch83 from "../images/epochs/epoch-83-cropped.gif";
 import Container from "react-bootstrap/Container";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
+import ModelDiagram from "../images/model_diagram.png";
+import ModelDiagramKey from "../images/model_diagram_key.jpg";
 
 export default function AIModel() {
   return (
@@ -28,6 +30,19 @@ export default function AIModel() {
         </Row>
       </Container>
       <p className="text-center">Two runs of text2mc</p>
+      <div className="text-center">
+      <Image
+        src={ModelDiagram}
+        alt="AI model diagram"
+        className="model-diagram-image"
+      />
+      <Image
+        src={ModelDiagramKey}
+        alt="Model diagram key"
+        className="model-diagram-key"
+      />
+      <p className="text-center">Complete AI model process</p>
+      </div>
     </div>
   );
 }

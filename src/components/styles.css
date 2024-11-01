@@ -42,6 +42,16 @@
     height: auto;
 }
 
+.model-diagram-image {    
+    width: 100%;
+    height: fit-content;
+}
+
+.model-diagram-key {    
+    width: 50%;
+    height: fit-content;
+}
+
 .gifs-image {    
     @media (max-width: 991.98px) {
         width: 70%;

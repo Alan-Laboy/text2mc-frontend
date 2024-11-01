@@ -1,5 +1,5 @@
 import Image from "react-bootstrap/Image";
-import Embeddings from "../images/embeddings/embeddings_scatterplot_2d.png";
+import Embeddings from "../images/embeddings/embeddings_scatterplot_2d_large.png";
 
 export default function Block2Vec() {
   return (
