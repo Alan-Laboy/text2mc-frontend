@@ -13,7 +13,7 @@ export default function NavigationBar() {
               <Nav.Link href="/#">Home</Nav.Link>
               <Nav.Link href="/#intro">Introduction</Nav.Link>
               <Nav.Link href="/#block2vec">Block2Vec</Nav.Link>
-              <Nav.Link href="/#Latent Space">Latent Space Plot</Nav.Link>
+              <Nav.Link href="/#Latent Space">Latent Space</Nav.Link>
               <Nav.Link href="/#ai-model">AI Model</Nav.Link>
               <Nav.Link href="/#pick-a-build">Pick a Build</Nav.Link>
               <Nav.Link href="/#faq">FAQ</Nav.Link>
