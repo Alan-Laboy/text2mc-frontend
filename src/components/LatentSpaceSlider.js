@@ -1,12 +1,17 @@
 import Form from "react-bootstrap/Form";
 import { useState } from "react";
 import Image from "react-bootstrap/Image";
-import TestImage from "../images/temporary_image.png";
+import House1 from "../images/interpolation_slider_images/House 1.png";
+import House2 from "../images/interpolation_slider_images/House 2.png";
+import House3 from "../images/interpolation_slider_images/House 3.png";
+import House4 from "../images/interpolation_slider_images/House 4.png";
+import House5 from "../images/interpolation_slider_images/House 5.png";
+import House6 from "../images/interpolation_slider_images/House 6.png";
 
 export default function LatentBuildSlider() {
   const [interpolationValue, setInterpolationValue] = useState(0);
-  const [interpolationImageSrc, setInterpolationImageSrc] = useState("");
-  const interpolationImages = [TestImage, TestImage, TestImage, TestImage, TestImage];
+  const [interpolationImageSrc, setInterpolationImageSrc] = useState(House1);
+  const interpolationImages = [House1, House2, House3, House4, House5, House6];
 
   const updateInterpolation = (event) => {
     const sliderValue = event.target.value;
@@ -16,12 +21,16 @@ export default function LatentBuildSlider() {
 
   return (
     <div>
-      <Image src={interpolationImageSrc} alt="Test image" fluid />
+      <div className="text-center">
+        <Image className="interpolations-image" src={interpolationImageSrc} alt="Interpolation of a house" fluid />
+      </div>
       <Form>
-        <Form.Label>Latent Space Interpolation</Form.Label>
+        <div>
+          <Form.Label>Latent Space Interpolation: House {Number(interpolationValue) + 1}</Form.Label>
+        </div>
         <Form.Range
           min="0"
-          max="4"
+          max={interpolationImages.length - 1}
           value={interpolationValue}
           onChange={updateInterpolation}
         />

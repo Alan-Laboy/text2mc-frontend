@@ -26,7 +26,7 @@
     font-size: x-large;
 }
 
-.embeddings-image {    
+.embeddings-image, .interpolations-image {    
     @media (max-width: 991.98px) {
         width: 100%;
     }
