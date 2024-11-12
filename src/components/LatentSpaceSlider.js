@@ -7,6 +7,9 @@ import House3 from "../images/interpolation_slider_images/House 3.png";
 import House4 from "../images/interpolation_slider_images/House 4.png";
 import House5 from "../images/interpolation_slider_images/House 5.png";
 import House6 from "../images/interpolation_slider_images/House 6.png";
+import Container from "react-bootstrap/Container";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
 
 export default function LatentBuildSlider() {
   const [interpolationValue, setInterpolationValue] = useState(0);
@@ -24,17 +27,24 @@ export default function LatentBuildSlider() {
       <div className="text-center">
         <Image className="interpolations-image" src={interpolationImageSrc} alt="Interpolation of a house" fluid />
       </div>
-      <Form>
-        <div>
-          <Form.Label>Latent Space Interpolation: House {Number(interpolationValue) + 1}</Form.Label>
-        </div>
-        <Form.Range
-          min="0"
-          max={interpolationImages.length - 1}
-          value={interpolationValue}
-          onChange={updateInterpolation}
-        />
-      </Form>
+      <Container>
+        <Row className="d-flex justify-content-center">
+          <Col xs={12} sm={11} md={10} lg={8}>
+            <p>Use the slider to see the interpolations of the house from the graph above.</p>
+            <Form>
+              <div>
+                <Form.Label>Latent Space Interpolation: House {Number(interpolationValue) + 1}</Form.Label>
+              </div>
+              <Form.Range
+                min="0"
+                max={interpolationImages.length - 1}
+                value={interpolationValue}
+                onChange={updateInterpolation}
+              />
+            </Form>
+          </Col>
+        </Row>
+      </Container>
     </div>
   );
 }
