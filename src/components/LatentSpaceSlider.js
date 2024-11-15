@@ -29,12 +29,12 @@ export default function LatentBuildSlider() {
   return (
     <div>
       <div className="text-center">
-        <Image className="interpolations-image" src={interpolationImageSrc} alt="Interpolation of terrain and a house" fluid />
+        <Image className="interpolations-image" src={interpolationImageSrc} alt="Interpolation of two buildings" fluid />
       </div>
       <Container>
         <Row className="d-flex justify-content-center">
           <Col xs={12} sm={11} md={10} lg={8}>
-            <p>Use the slider to see the interpolations of terrain and a house.</p>
+            <p>Use the slider to see the interpolations of two buildings.</p>
             <Form>
               <div>
                 <Form.Label>Latent Space Interpolation: {Number(interpolationValue) + 1}</Form.Label>
